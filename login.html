@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Team Access - Younes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+    <div class="login-container">
+        <div class="login-background">
+            <div class="circuit-pattern"></div>
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+        </div>
+
+        <div class="login-box">
+            <div class="login-header">
+                <div class="logo-large">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">YOUNES</span>
+                </div>
+                <h2>Red Team Access Panel</h2>
+                <p>Authorized Personnel Only</p>
+            </div>
+
+            <form class="login-form" id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required placeholder="Enter username">
+                    <div class="input-glow"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter password">
+                    <div class="input-glow"></div>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">
+                    <span>Access Dashboard</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </button>
+
+                <div class="login-footer">
+                    <a href="index.html">← Back to Home</a>
+                </div>
+            </form>
+
+            <div class="login-security-note">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="10" stroke="var(--neon-cyan)" stroke-width="2"/>
+                    <path d="M12 8V12M12 16H12.01" stroke="var(--neon-cyan)" stroke-width="2"/>
+                </svg>
+                <span>This is a demonstration login panel. Use: admin / demo123</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

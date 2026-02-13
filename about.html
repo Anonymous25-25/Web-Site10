@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Younes - Junior Penetration Tester | Learn about my background, skills, and expertise">
+    <title>About Me - Younes | Penetration Testing Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">YOUNES</span>
+                </a>
+            </div>
+            
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="fr">FR</button>
+                <button class="lang-btn" data-lang="ar">AR</button>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link" data-translate="nav_home">Home</a></li>
+                <li><a href="index.html#services" class="nav-link" data-translate="nav_services">Services</a></li>
+                <li><a href="index.html#skills" class="nav-link" data-translate="nav_skills">Skills</a></li>
+                <li><a href="about.html" class="nav-link active" data-translate="nav_about">About Me</a></li>
+                <li><a href="index.html#contact" class="nav-link" data-translate="nav_contact">Contact</a></li>
+            </ul>
+
+            <!-- Theme Switcher -->
+            <button class="theme-toggle" id="themeToggle" title="Toggle theme">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- About Hero -->
+    <section class="about-hero">
+        <div class="hero-background">
+            <div class="circuit-pattern"></div>
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+        </div>
+        
+        <div class="container">
+            <div class="about-hero-content">
+                <h1 data-translate="about_hero_title">About Me</h1>
+                <p data-translate="about_hero_subtitle">Cybersecurity Enthusiast & Penetration Tester</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-content">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Profile Image -->
+                <div class="about-image">
+                    <div class="profile-frame">
+                        <!-- Replace with actual profile image -->
+                        <!-- <img src="images/profile.jpg" alt="Younes Profile"> -->
+                        <div class="profile-placeholder">
+                            <svg width="200" height="200" viewBox="0 0 200 200" fill="none">
+                                <circle cx="100" cy="70" r="30" stroke="var(--neon-cyan)" stroke-width="2"/>
+                                <path d="M50 150C50 150 60 120 100 120C140 120 150 150 150 150" stroke="var(--neon-cyan)" stroke-width="2"/>
+                                <circle cx="100" cy="100" r="80" stroke="url(#gradient1)" stroke-width="2" opacity="0.3"/>
+                                <defs>
+                                    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="var(--neon-cyan)"/>
+                                        <stop offset="100%" stop-color="var(--neon-purple)"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="profile-glow"></div>
+                    </div>
+
+                    <!-- Quick Stats -->
+                    <div class="quick-stats">
+                        <div class="stat-box">
+                            <div class="stat-icon">🎓</div>
+                            <div class="stat-info">
+                                <h4 data-translate="about_stat1_title">Education</h4>
+                                <p data-translate="about_stat1_value">Cybersecurity Student</p>
+                            </div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-icon">💼</div>
+                            <div class="stat-info">
+                                <h4 data-translate="about_stat2_title">Experience</h4>
+                                <p data-translate="about_stat2_value">2+ Years</p>
+                            </div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-icon">🏆</div>
+                            <div class="stat-info">
+                                <h4 data-translate="about_stat3_title">Certifications</h4>
+                                <p data-translate="about_stat3_value">5+ Active Certs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Info -->
+                <div class="about-info">
+                    <div class="info-section">
+                        <h2 data-translate="about_intro_title">Hello, I'm Younes</h2>
+                        <p data-translate="about_intro_p1">
+                            I am a passionate cybersecurity student specializing in <strong>Penetration Testing</strong> 
+                            and <strong>Offensive Security</strong>. My journey in cybersecurity began with a fascination 
+                            for understanding how systems work and how they can be secured against malicious actors.
+                        </p>
+                        <p data-translate="about_intro_p2">
+                            With a strong foundation in ethical hacking methodologies and hands-on experience in 
+                            vulnerability assessment, I am dedicated to helping organizations identify and remediate 
+                            security weaknesses before they can be exploited.
+                        </p>
+                        <p data-translate="about_intro_p3">
+                            I continuously expand my knowledge through practical labs, CTF competitions, and staying 
+                            updated with the latest security trends and attack vectors. My goal is to contribute to 
+                            a more secure digital world by combining technical expertise with ethical responsibility.
+                        </p>
+                    </div>
+
+                    <div class="info-section">
+                        <h3 data-translate="about_focus_title">Areas of Focus</h3>
+                        <div class="focus-grid">
+                            <div class="focus-item">
+                                <div class="focus-icon">🌐</div>
+                                <h4 data-translate="about_focus1">Web Application Security</h4>
+                            </div>
+                            <div class="focus-item">
+                                <div class="focus-icon">🔒</div>
+                                <h4 data-translate="about_focus2">Network Penetration</h4>
+                            </div>
+                            <div class="focus-item">
+                                <div class="focus-icon">📱</div>
+                                <h4 data-translate="about_focus3">Mobile Security</h4>
+                            </div>
+                            <div class="focus-item">
+                                <div class="focus-icon">🎭</div>
+                                <h4 data-translate="about_focus4">Social Engineering</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge" data-translate="cert_badge">🏆 Credentials</div>
+                <h2 class="section-title" data-translate="cert_title">Certifications & Training</h2>
+            </div>
+
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-badge">✓</div>
+                    <h4>CEH</h4>
+                    <p data-translate="cert1">Certified Ethical Hacker</p>
+                    <span class="cert-year">2023</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-badge">✓</div>
+                    <h4>eJPT</h4>
+                    <p data-translate="cert2">eLearnSecurity Junior Penetration Tester</p>
+                    <span class="cert-year">2023</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-badge">✓</div>
+                    <h4>CompTIA Security+</h4>
+                    <p data-translate="cert3">Security Fundamentals</p>
+                    <span class="cert-year">2022</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-badge">✓</div>
+                    <h4>OSCP</h4>
+                    <p data-translate="cert4">Offensive Security Certified Professional</p>
+                    <span class="cert-year" data-translate="cert_progress">In Progress</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Details Section -->
+    <section class="skills-detail-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge" data-translate="skills_badge">💻 Technical Expertise</div>
+                <h2 class="section-title" data-translate="skills_detail_title">Comprehensive Skill Set</h2>
+            </div>
+
+            <div class="skills-tabs">
+                <button class="skill-tab active" data-tab="offensive" data-translate="tab_offensive">Offensive Security</button>
+                <button class="skill-tab" data-tab="defensive" data-translate="tab_defensive">Defensive Skills</button>
+                <button class="skill-tab" data-tab="programming" data-translate="tab_programming">Programming</button>
+                <button class="skill-tab" data-tab="tools" data-translate="tab_tools">Tools & Platforms</button>
+            </div>
+
+            <div class="skills-tab-content">
+                <!-- Offensive Security Tab -->
+                <div class="tab-pane active" id="offensive">
+                    <div class="skill-details-grid">
+                        <div class="skill-detail-card">
+                            <h4 data-translate="skill_detail1_title">Web Application Testing</h4>
+                            <ul>
+                                <li data-translate="skill_detail1_item1">SQL Injection & NoSQL attacks</li>
+                                <li data-translate="skill_detail1_item2">XSS, CSRF, XXE vulnerabilities</li>
+                                <li data-translate="skill_detail1_item3">Authentication & session management</li>
+                                <li data-translate="skill_detail1_item4">API security testing</li>
+                            </ul>
+                        </div>
+                        <div class="skill-detail-card">
+                            <h4 data-translate="skill_detail2_title">Network Penetration</h4>
+                            <ul>
+                                <li data-translate="skill_detail2_item1">Port scanning & enumeration</li>
+                                <li data-translate="skill_detail2_item2">Vulnerability exploitation</li>
+                                <li data-translate="skill_detail2_item3">Privilege escalation techniques</li>
+                                <li data-translate="skill_detail2_item4">Lateral movement</li>
+                            </ul>
+                        </div>
+                        <div class="skill-detail-card">
+                            <h4 data-translate="skill_detail3_title">Wireless Security</h4>
+                            <ul>
+                                <li data-translate="skill_detail3_item1">WPA/WPA2 cracking</li>
+                                <li data-translate="skill_detail3_item2">Evil twin attacks</li>
+                                <li data-translate="skill_detail3_item3">Bluetooth security</li>
+                                <li data-translate="skill_detail3_item4">RF protocol analysis</li>
+                            </ul>
+                        </div>
+                        <div class="skill-detail-card">
+                            <h4 data-translate="skill_detail4_title">Social Engineering</h4>
+                            <ul>
+                                <li data-translate="skill_detail4_item1">Phishing campaigns</li>
+                                <li data-translate="skill_detail4_item2">Pretexting scenarios</li>
+                                <li data-translate="skill_detail4_item3">Physical security testing</li>
+                                <li data-translate="skill_detail4_item4">OSINT reconnaissance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Defensive Skills Tab -->
+                <div class="tab-pane" id="defensive">
+                    <div class="skill-details-grid">
+                        <div class="skill-detail-card">
+                            <h4 data-translate="skill_defensive1_title">Incident Response</h4>
+                            <ul>
+                                <li data-translate="skill_defensive1_item1">Threat hunting</li>
+                                <li data-translate="skill_defensive1_item2">Log analysis</li>
+                                <li data-translate="skill_defensive1_item3">Malware analysis basics</li>
+                                <li data-translate="skill_defensive1_item4">Forensics fundamentals</li>
+                            </ul>
+                        </div>
+                        <div class="skill-detail-card">
+                            <h4 data-translate="skill_defensive2_title">Security Hardening</h4>
+                            <ul>
+                                <li data-translate="skill_defensive2_item1">System configuration</li>
+                                <li data-translate="skill_defensive2_item2">Patch management</li>
+                                <li data-translate="skill_defensive2_item3">Access control implementation</li>
+                                <li data-translate="skill_defensive2_item4">Network segmentation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Programming Tab -->
+                <div class="tab-pane" id="programming">
+                    <div class="skill-details-grid">
+                        <div class="skill-detail-card">
+                            <h4>Python</h4>
+                            <ul>
+                                <li data-translate="skill_prog1_item1">Automation scripts</li>
+                                <li data-translate="skill_prog1_item2">Custom exploit development</li>
+                                <li data-translate="skill_prog1_item3">Security tool creation</li>
+                                <li data-translate="skill_prog1_item4">API interaction</li>
+                            </ul>
+                        </div>
+                        <div class="skill-detail-card">
+                            <h4>Bash/Shell Scripting</h4>
+                            <ul>
+                                <li data-translate="skill_prog2_item1">Automation & orchestration</li>
+                                <li data-translate="skill_prog2_item2">System administration</li>
+                                <li data-translate="skill_prog2_item3">Parsing & data processing</li>
+                                <li data-translate="skill_prog2_item4">One-liner payloads</li>
+                            </ul>
+                        </div>
+                        <div class="skill-detail-card">
+                            <h4>Web Technologies</h4>
+                            <ul>
+                                <li>HTML/CSS/JavaScript</li>
+                                <li>PHP, Node.js</li>
+                                <li>SQL & NoSQL databases</li>
+                                <li>RESTful APIs</li>
+                            </ul>
+                        </div>
+                        <div class="skill-detail-card">
+                            <h4 data-translate="skill_prog4_title">Low-Level Programming</h4>
+                            <ul>
+                                <li>C/C++</li>
+                                <li>Assembly (x86/x64)</li>
+                                <li data-translate="skill_prog4_item3">Buffer overflow exploitation</li>
+                                <li data-translate="skill_prog4_item4">Reverse engineering</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools Tab -->
+                <div class="tab-pane" id="tools">
+                    <div class="tools-categories">
+                        <div class="tool-category">
+                            <h4 data-translate="tool_cat1">Penetration Testing Platforms</h4>
+                            <div class="tool-tags">
+                                <span class="tool-tag">Kali Linux</span>
+                                <span class="tool-tag">Parrot OS</span>
+                                <span class="tool-tag">BlackArch</span>
+                                <span class="tool-tag">Pentoo</span>
+                            </div>
+                        </div>
+                        <div class="tool-category">
+                            <h4 data-translate="tool_cat2">Reconnaissance</h4>
+                            <div class="tool-tags">
+                                <span class="tool-tag">Nmap</span>
+                                <span class="tool-tag">Masscan</span>
+                                <span class="tool-tag">Amass</span>
+                                <span class="tool-tag">Recon-ng</span>
+                                <span class="tool-tag">theHarvester</span>
+                            </div>
+                        </div>
+                        <div class="tool-category">
+                            <h4 data-translate="tool_cat3">Web Application Testing</h4>
+                            <div class="tool-tags">
+                                <span class="tool-tag">Burp Suite</span>
+                                <span class="tool-tag">OWASP ZAP</span>
+                                <span class="tool-tag">SQLMap</span>
+                                <span class="tool-tag">Nikto</span>
+                                <span class="tool-tag">Wfuzz</span>
+                            </div>
+                        </div>
+                        <div class="tool-category">
+                            <h4 data-translate="tool_cat4">Exploitation Frameworks</h4>
+                            <div class="tool-tags">
+                                <span class="tool-tag">Metasploit</span>
+                                <span class="tool-tag">Empire</span>
+                                <span class="tool-tag">Cobalt Strike</span>
+                                <span class="tool-tag">BeEF</span>
+                            </div>
+                        </div>
+                        <div class="tool-category">
+                            <h4 data-translate="tool_cat5">Password Cracking</h4>
+                            <div class="tool-tags">
+                                <span class="tool-tag">John the Ripper</span>
+                                <span class="tool-tag">Hashcat</span>
+                                <span class="tool-tag">Hydra</span>
+                                <span class="tool-tag">Medusa</span>
+                            </div>
+                        </div>
+                        <div class="tool-category">
+                            <h4 data-translate="tool_cat6">Network Analysis</h4>
+                            <div class="tool-tags">
+                                <span class="tool-tag">Wireshark</span>
+                                <span class="tool-tag">tcpdump</span>
+                                <span class="tool-tag">Netcat</span>
+                                <span class="tool-tag">Scapy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge" data-translate="timeline_badge">📅 Journey</div>
+                <h2 class="section-title" data-translate="timeline_title">My Cybersecurity Path</h2>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2024</span>
+                        <h4 data-translate="timeline1_title">Advanced Penetration Testing</h4>
+                        <p data-translate="timeline1_desc">
+                            Pursuing OSCP certification and specializing in red team operations. 
+                            Contributing to open-source security tools.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2023</span>
+                        <h4 data-translate="timeline2_title">Professional Certifications</h4>
+                        <p data-translate="timeline2_desc">
+                            Obtained CEH and eJPT certifications. Completed numerous CTF challenges 
+                            and participated in bug bounty programs.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2022</span>
+                        <h4 data-translate="timeline3_title">Cybersecurity Studies</h4>
+                        <p data-translate="timeline3_desc">
+                            Began formal education in cybersecurity. Earned CompTIA Security+ 
+                            and started building home lab environment.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2021</span>
+                        <h4 data-translate="timeline4_title">The Beginning</h4>
+                        <p data-translate="timeline4_desc">
+                            Discovered passion for cybersecurity through ethical hacking courses 
+                            and online resources. Started learning Linux and networking fundamentals.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-translate="cta_title">Ready to Secure Your Systems?</h2>
+                <p data-translate="cta_description">
+                    Let's discuss how I can help identify and remediate security vulnerabilities in your organization.
+                </p>
+                <div class="cta-buttons">
+                    <a href="index.html#contact" class="btn btn-primary" data-translate="cta_btn1">Get In Touch</a>
+                    <a href="tools.html" class="btn btn-secondary" data-translate="cta_btn2">View My Tools</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">YOUNES</span>
+                    </div>
+                    <p data-translate="footer_description">
+                        Junior Penetration Tester specialized in offensive security and ethical hacking.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h4 data-translate="footer_quick_links">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html" data-translate="nav_home">Home</a></li>
+                        <li><a href="about.html" data-translate="nav_about">About Me</a></li>
+                        <li><a href="tools.html" data-translate="footer_tools">Tools</a></li>
+                        <li><a href="articles.html" data-translate="footer_articles">Articles</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4 data-translate="footer_services">Services</h4>
+                    <ul>
+                        <li><a href="index.html#services" data-translate="service1_title">Penetration Testing</a></li>
+                        <li><a href="index.html#services" data-translate="service2_title">Vulnerability Assessment</a></li>
+                        <li><a href="index.html#services" data-translate="service3_title">Red Team Operations</a></li>
+                        <li><a href="index.html#services" data-translate="service4_title">Security Consulting</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4 data-translate="footer_connect">Connect</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/younes" target="_blank" aria-label="GitHub">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/in/younes" target="_blank" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/younes" target="_blank" aria-label="X/Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com/younes" target="_blank" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/212XXXXXXXXX" target="_blank" aria-label="WhatsApp">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Younes. <span data-translate="footer_rights">All rights reserved.</span></p>
+                <p data-translate="footer_disclaimer">
+                    This portfolio is for educational and professional purposes only.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 19V5M5 12L12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
