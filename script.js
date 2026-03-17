@@ -441,18 +441,15 @@ function closeMobileMenu() {
 // LANGUAGE SWITCHER
 // ===========================================
 function initializeLanguageSwitcher() {
+    // querySelectorAll gets ALL lang-btns including inside mobile menu
     const langButtons = document.querySelectorAll('.lang-btn');
-    
+
     langButtons.forEach(btn => {
         btn.addEventListener('click', () => {
             const lang = btn.getAttribute('data-lang');
             switchLanguage(lang);
-            
-            // Update active state
-            langButtons.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
         });
-        
+
         // Set initial active state
         if (btn.getAttribute('data-lang') === state.currentLanguage) {
             btn.classList.add('active');
@@ -464,13 +461,20 @@ function switchLanguage(lang) {
     state.currentLanguage = lang;
     savePreferences();
     updatePageLanguage();
-    
+
     // Apply RTL for Arabic
     if (lang === 'ar') {
         document.documentElement.setAttribute('dir', 'rtl');
+        document.documentElement.setAttribute('lang', 'ar');
     } else {
         document.documentElement.setAttribute('dir', 'ltr');
+        document.documentElement.setAttribute('lang', lang);
     }
+
+    // Update active state on ALL lang buttons (navbar + mobile menu)
+    document.querySelectorAll('.lang-btn').forEach(b => {
+        b.classList.toggle('active', b.getAttribute('data-lang') === lang);
+    });
 }
 
 function updatePageLanguage() {
