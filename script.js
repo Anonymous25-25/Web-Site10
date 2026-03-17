@@ -396,19 +396,27 @@ function initializeSearch() {
 function initializeMobileMenu() {
     const mobileToggle = document.getElementById('mobileToggle');
     const navMenu = document.getElementById('navMenu');
-    
+    const navOverlay = document.getElementById('navOverlay');
+
     if (mobileToggle && navMenu) {
         mobileToggle.addEventListener('click', () => {
             state.isMenuOpen = !state.isMenuOpen;
             mobileToggle.classList.toggle('active');
             navMenu.classList.toggle('active');
+            if (navOverlay) navOverlay.classList.toggle('active');
+            document.body.style.overflow = state.isMenuOpen ? 'hidden' : '';
         });
-        
-        // Close menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (state.isMenuOpen && 
-                !mobileToggle.contains(e.target) && 
-                !navMenu.contains(e.target)) {
+
+        if (navOverlay) {
+            navOverlay.addEventListener('click', () => closeMobileMenu());
+        }
+
+        navMenu.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => closeMobileMenu());
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && state.isMenuOpen) {
                 closeMobileMenu();
             }
         });
@@ -418,11 +426,14 @@ function initializeMobileMenu() {
 function closeMobileMenu() {
     const mobileToggle = document.getElementById('mobileToggle');
     const navMenu = document.getElementById('navMenu');
-    
+    const navOverlay = document.getElementById('navOverlay');
+
     if (mobileToggle && navMenu) {
         state.isMenuOpen = false;
         mobileToggle.classList.remove('active');
         navMenu.classList.remove('active');
+        if (navOverlay) navOverlay.classList.remove('active');
+        document.body.style.overflow = '';
     }
 }
 
