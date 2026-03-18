@@ -622,7 +622,7 @@
                         </div>
                         <div>
                             <h4 data-translate="contact_email_label">Email</h4>
-                            <p>black1black234b@gmail.com</p>
+                            <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="21434d40424a10434d40424a1312154361464c40484d0f424e4c">[email&#160;protected]</a></p>
                         </div>
                     </div>
 
@@ -815,7 +815,7 @@
         </svg>
     </button>
 
-    <script src="script.js"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
 
     <!-- Three.js CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -935,16 +935,17 @@
         }
 
         // Initial glitch on load
-        setTimeout(glitch, 800);
+        setTimeout(glit        setTimeout(glitch, 500);
 
         // Glitch on hover
-        const logoLink = document.getElementById('logoLink');
+        const logoLink = document.querySelector('.logo-link');
         if (logoLink) {
             logoLink.addEventListener('mouseenter', glitch);
         }
     })();
     </script>
 
+    <!-- Three.js Hero 3D Scene -->
+    <script src="three-scene.js"></script>
 </body>
-
 </html>
