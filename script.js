@@ -89,79 +89,6 @@ const translations = {
         footer_rights: 'All rights reserved.',
         footer_disclaimer: 'This portfolio is for educational and professional purposes only.'
     },
-    fr: {
-        // Navigation
-        nav_home: 'Accueil',
-        nav_services: 'Services',
-        nav_skills: 'Compétences',
-        nav_about: 'À Propos',
-        nav_projects: 'Projets',
-        nav_contact: 'Contact',
-        
-        // Hero Section
-        hero_badge: '🛡️ Youness Boussedari — Ingénieur Cybersécurité',
-        hero_title: 'Spécialiste de la Sécurité Offensive',
-        hero_subtitle: 'Sécurité Offensive | Hacking Éthique | Red Team',
-        hero_description: 'Je conçois des scénarios d\'attaque réels, je valide la détection et je fournis des rapports précis pour aider les équipes à renforcer leurs systèmes.',
-        hero_btn_primary: 'Demander un pentest',
-        hero_btn_secondary: 'En Savoir Plus',
-        
-        // Stats
-        stat_projects: 'Projets Réalisés',
-        stat_certifications: 'Certifications',
-        stat_satisfaction: 'Satisfaction Client',
-        
-        // Services
-        services_badge: '🎯 Ce Que Je Fais',
-        services_title: 'Services Professionnels',
-        services_description: 'Solutions de sécurité complètes adaptées aux besoins de votre organisation',
-        service1_title: 'Tests d\'Intrusion',
-        service2_title: 'Évaluation des Vulnérabilités',
-        service3_title: 'Opérations Red Team',
-        service4_title: 'Conseil en Sécurité',
-        
-        // Skills
-        skills_badge: '💻 Expertise Technique',
-        skills_title: 'Compétences & Technologies',
-        skills_description: 'Compétences clés qui alimentent mes évaluations de sécurité',
-        
-        // Tools
-        tools_badge: '🛠️ Arsenal',
-        tools_title: 'Outils de Sécurité',
-        tools_description: 'Outils et frameworks professionnels que j\'utilise pour les évaluations de sécurité',
-        tools_btn: 'Voir Tous les Outils',
-        
-        // Articles
-        articles_badge: '📝 Base de Connaissances',
-        articles_title: 'Recherche & Articles',
-        articles_description: 'Dernières recherches en sécurité, divulgations de vulnérabilités et articles techniques',
-        article_read_more: 'Lire la Suite →',
-        articles_btn: 'Voir Tous les Articles',
-        
-        // Contact
-        contact_badge: '📧 Contactez-Moi',
-        contact_title: 'Travaillons Ensemble',
-        contact_description: 'Vous avez un projet de sécurité ou besoin de consultation ? Contactez-moi et discutons de la manière dont je peux vous aider.',
-        contact_email_label: 'Email',
-        contact_location_label: 'Localisation',
-        contact_location: 'Maroc',
-        contact_phone_label: 'Téléphone',
-        form_name: 'Votre Nom',
-        form_email: 'Votre Email',
-        form_subject: 'Sujet',
-        form_message: 'Message',
-        form_submit: 'Envoyer le Message',
-        
-        // Footer
-        footer_description: 'Pentester Junior spécialisé en sécurité offensive et hacking éthique.',
-        footer_quick_links: 'Liens Rapides',
-        footer_services: 'Services',
-        footer_connect: 'Connecter',
-        footer_tools: 'Outils',
-        footer_articles: 'Articles',
-        footer_rights: 'Tous droits réservés.',
-        footer_disclaimer: 'Ce portfolio est à des fins éducatives et professionnelles uniquement.'
-    },
     ar: {
         // Navigation
         nav_home: 'الرئيسية',
@@ -233,7 +160,193 @@ const translations = {
         footer_tools: 'الأدوات',
         footer_articles: 'المقالات',
         footer_rights: 'كل الحقوق محفوظة.',
-        footer_disclaimer: 'هذا المحفظة للأغراض التعليمية والمهنية فقط.'
+        footer_disclaimer: 'هذا الموقع للأغراض التعليمية والمهنية فقط.',
+
+        // About page
+        about_badge: '🧑‍💻 من أنا',
+        about_title: 'يونس بوسداري',
+        about_description: 'مهندس أمن سيبراني ومختبر اختراق متخصص في الأمن الهجومي.',
+        about_me_title: 'نبذة عني',
+
+        // Services descriptions
+        service1_description: 'تقييمات أمنية شاملة لتحديد الثغرات في بنيتك التحتية وتطبيقاتك.',
+        service1_feature1: 'اختبار أمان الشبكات',
+        service1_feature2: 'اختبار تطبيقات الويب',
+        service1_feature3: 'أمان تطبيقات الجوال',
+        service2_description: 'فحص منهجي للثغرات الأمنية مع تقارير مفصلة وتوصيات للمعالجة.',
+        service2_feature1: 'الفحص الآلي',
+        service2_feature2: 'التحقق اليدوي',
+        service2_feature3: 'تحديد الأولويات حسب المخاطر',
+        service3_description: 'هجمات محاكاة للواقع لاختبار قدرات اكتشاف مؤسستك والاستجابة للتهديدات.',
+        service3_feature1: 'الهندسة الاجتماعية',
+        service3_feature2: 'اختبار الأمان المادي',
+        service3_feature3: 'محاكاة التهديدات',
+        service4_description: 'إرشاد خبير حول هندسة الأمان وتطوير السياسات ومتطلبات الامتثال.',
+        service4_feature1: 'تدقيق الأمان',
+        service4_feature2: 'تقييم الامتثال',
+        service4_feature3: 'التدريب والتوعية',
+
+        // Projects section
+        projects_badge: '🧪 المختبرات والمشاريع',
+        projects_title: 'مختبرات الأمان ودراسات الحالة',
+        projects_description: 'مشاريع مختبرية عملية تُظهر تقنيات الأمن الهجومي والتقارير.',
+
+        // Skills
+        skill_cat1_title: 'الأمن الهجومي',
+        skill1_1: 'اختبار تطبيقات الويب',
+        skill1_2: 'اختراق الشبكات',
+        skill1_3: 'تطوير الاستغلال',
+        skill1_4: 'الهندسة الاجتماعية',
+        skill_cat2_title: 'البرمجة والسكريبت',
+        skill_cat3_title: 'أطر الأمان',
+
+        // Articles
+        article1_category: 'أمان الويب',
+        article1_title: 'تقنيات حقن SQL المتقدمة',
+        article1_excerpt: 'استكشاف ناقلات حقن SQL الحديثة وتجاوز حماية WAF في التطبيقات المؤسسية.',
+        article2_category: 'الفريق الأحمر',
+        article2_title: 'استغلال Active Directory',
+        article2_excerpt: 'دليل شامل لاختراق بيئات Active Directory من الوصول الأولي إلى السيطرة الكاملة.',
+        article3_category: 'أمان الجوال',
+        article3_title: 'اختبار اختراق تطبيقات أندرويد',
+        article3_excerpt: 'منهجية شاملة لاختبار تطبيقات أندرويد تشمل الهندسة العكسية والتلاعب في وقت التشغيل.',
+        article_read_more: 'اقرأ المزيد ←',
+        articles_btn: 'عرض جميع المقالات',
+        articles_badge: '📝 قاعدة المعرفة',
+        articles_title: 'البحث والمقالات',
+        articles_description: 'أحدث الأبحاث الأمنية والكشف عن الثغرات والمقالات التقنية',
+
+        // About page - stats
+        about_stat1_title: 'التعليم',
+        about_stat1_value: 'طالب أمن سيبراني',
+        about_stat2_title: 'الخبرة',
+        about_stat2_value: '+2 سنوات',
+        about_stat3_title: 'الشهادات',
+        about_stat3_value: '+15 شهادة نشطة',
+
+        // About page - intro
+        about_intro_title: 'مرحباً، أنا يونس',
+        about_intro_p1: 'أنا طالب شغوف بالأمن السيبراني متخصص في اختبار الاختراق والأمن الهجومي. بدأت رحلتي في الأمن السيبراني بفضول حول كيفية عمل الأنظمة وكيفية تأمينها ضد المهاجمين.',
+        about_intro_p2: 'بفهم قوي لمنهجيات القرصنة الأخلاقية وخبرة عملية في تقييم الثغرات، أسعى إلى مساعدة المنظمات في تحديد نقاط الضعف الأمنية ومعالجتها.',
+        about_intro_p3: 'أوسع معرفتي باستمرار من خلال المختبرات العملية ومسابقات CTF ومتابعة أحدث اتجاهات الأمان وناقلات الهجوم.',
+
+        // About page - focus areas
+        about_focus_title: 'مجالات التركيز',
+        about_focus1: 'أمان تطبيقات الويب',
+        about_focus2: 'اختراق الشبكات',
+        about_focus3: 'أمان الجوال',
+        about_focus4: 'الهندسة الاجتماعية',
+
+        // Certifications
+        cert_badge: '🏆 الاعتمادات',
+        cert_title: 'الشهادات والتدريب',
+        cert1: 'هاكر أخلاقي معتمد',
+        cert2: 'مختبر اختراق مبتدئ - eLearnSecurity',
+        cert3: 'أساسيات الأمن',
+        cert4: 'متخصص أمن هجومي معتمد',
+        cert_progress: 'قيد التقدم',
+
+        // Skills detail
+        skills_detail_title: 'مجموعة المهارات الشاملة',
+        tab_offensive: 'الأمن الهجومي',
+        tab_defensive: 'المهارات الدفاعية',
+        tab_programming: 'البرمجة',
+        tab_tools: 'الأدوات والمنصات',
+
+        skill_detail1_title: 'اختبار تطبيقات الويب',
+        skill_detail1_item1: 'حقن SQL وهجمات NoSQL',
+        skill_detail1_item2: 'ثغرات XSS و CSRF و XXE',
+        skill_detail1_item3: 'المصادقة وإدارة الجلسات',
+        skill_detail1_item4: 'اختبار أمان API',
+        skill_detail2_title: 'اختراق الشبكات',
+        skill_detail2_item1: 'فحص المنافذ والتعداد',
+        skill_detail2_item2: 'استغلال الثغرات',
+        skill_detail2_item3: 'تقنيات تصعيد الامتيازات',
+        skill_detail2_item4: 'الحركة الجانبية',
+        skill_detail3_title: 'أمان الشبكات اللاسلكية',
+        skill_detail3_item1: 'اختراق WPA/WPA2',
+        skill_detail3_item2: 'هجمات النقطة الزائفة',
+        skill_detail3_item3: 'أمان Bluetooth',
+        skill_detail3_item4: 'تحليل بروتوكول RF',
+        skill_detail4_title: 'الهندسة الاجتماعية',
+        skill_detail4_item1: 'حملات التصيد الاحتيالي',
+        skill_detail4_item2: 'سيناريوهات الادعاء',
+        skill_detail4_item3: 'اختبار الأمان المادي',
+        skill_detail4_item4: 'استطلاع OSINT',
+        skill_defensive1_title: 'الاستجابة للحوادث',
+        skill_defensive1_item1: 'البحث عن التهديدات',
+        skill_defensive1_item2: 'تحليل السجلات',
+        skill_defensive1_item3: 'أساسيات تحليل البرامج الضارة',
+        skill_defensive1_item4: 'أساسيات الجنائيات الرقمية',
+        skill_defensive2_title: 'تعزيز الأمان',
+        skill_defensive2_item1: 'تكوين الأنظمة',
+        skill_defensive2_item2: 'إدارة التحديثات',
+        skill_defensive2_item3: 'تطبيق التحكم في الوصول',
+        skill_defensive2_item4: 'تجزئة الشبكة',
+        skill_prog1_item1: 'سكريبتات الأتمتة',
+        skill_prog1_item2: 'تطوير الاستغلال المخصص',
+        skill_prog1_item3: 'إنشاء أدوات الأمان',
+        skill_prog1_item4: 'التفاعل مع API',
+        skill_prog2_item1: 'الأتمتة والتنسيق',
+        skill_prog2_item2: 'إدارة الأنظمة',
+        skill_prog2_item3: 'تحليل البيانات',
+        skill_prog2_item4: 'حمولات السطر الواحد',
+        skill_prog4_title: 'البرمجة المنخفضة المستوى',
+        skill_prog4_item3: 'استغلال تجاوز سعة المخزن المؤقت',
+        skill_prog4_item4: 'الهندسة العكسية',
+
+        tool_cat1: 'منصات اختبار الاختراق',
+        tool_cat2: 'الاستطلاع',
+        tool_cat3: 'اختبار تطبيقات الويب',
+        tool_cat4: 'أطر الاستغلال',
+        tool_cat5: 'كسر كلمات المرور',
+        tool_cat6: 'تحليل الشبكة',
+
+        // Timeline
+        timeline_badge: '📅 المسيرة',
+        timeline_title: 'مسيرتي في الأمن السيبراني',
+        timeline1_title: 'اختبار الاختراق المتقدم',
+        timeline1_desc: 'السعي للحصول على شهادة OSCP والتخصص في عمليات الفريق الأحمر والمساهمة في أدوات الأمان مفتوحة المصدر.',
+        timeline2_title: 'الشهادات المهنية',
+        timeline2_desc: 'الحصول على شهادات CEH و eJPT. إكمال تحديات CTF عديدة والمشاركة في برامج مكافأة الثغرات.',
+        timeline3_title: 'دراسات الأمن السيبراني',
+        timeline3_desc: 'بدء التعليم الرسمي في الأمن السيبراني. الحصول على CompTIA Security+ وبدء بناء بيئة المختبر المنزلي.',
+        timeline4_title: 'البداية',
+        timeline4_desc: 'اكتشاف الشغف بالأمن السيبراني من خلال دورات القرصنة الأخلاقية والموارد الإلكترونية. البدء في تعلم Linux وأساسيات الشبكات.',
+
+        // CTA
+        cta_title: 'هل أنت مستعد لتأمين أنظمتك؟',
+        cta_description: 'لنناقش كيف يمكنني المساعدة في تحديد الثغرات الأمنية ومعالجتها في مؤسستك.',
+        cta_btn1: 'تواصل معي',
+        cta_btn2: 'عرض أدواتي',
+
+        // Tools page
+        tools_page_title: 'ترسانة الأمان الكاملة',
+        tools_page_description: 'جميع الأدوات المهنية التي أستخدمها في تقييمات الأمان',
+        tools_filter_all: 'الكل',
+        tools_filter_recon: 'الاستطلاع',
+        tools_filter_exploit: 'الاستغلال',
+        tools_filter_web: 'الويب',
+        tools_filter_network: 'الشبكات',
+        tools_filter_password: 'كلمات المرور',
+        tools_filter_forensics: 'الجنائيات',
+
+        // Articles page
+        articles_page_title: 'البحث والمقالات',
+        articles_page_subtitle: 'أبحاث الأمان وتحليل الثغرات والمقالات التقنية',
+        art1_title: 'تقنيات حقن SQL المتقدمة',
+        art1_excerpt: 'استكشاف معمق لناقلات حقن SQL الحديثة وتقنيات تجاوز حماية WAF...',
+        art2_title: 'استغلال Active Directory',
+        art2_excerpt: 'دليل شامل لاختراق بيئات AD من الوصول الأولي إلى السيطرة الكاملة...',
+        art3_title: 'اختبار اختراق تطبيقات أندرويد',
+        art3_excerpt: 'منهجية شاملة لاختبار تطبيقات أندرويد تشمل الهندسة العكسية...',
+        art4_title: 'إساءة تكوين أمان AWS',
+        art4_excerpt: 'أخطاء التكوين الشائعة في AWS وكيفية تحديدها واستغلالها...',
+        art_cat_web: 'أمان الويب',
+        art_cat_redteam: 'الفريق الأحمر',
+        art_cat_mobile: 'أمان الجوال',
+        art_cat_cloud: 'أمان السحابة',
+        art_read_full: 'قراءة المقال كاملاً ←'
     }
 };
 
@@ -275,8 +388,11 @@ function initializeApp() {
 function loadPreferences() {
     // Load language
     const savedLang = localStorage.getItem('portfolio_language');
-    if (savedLang) {
+    if (savedLang && (savedLang === 'en' || savedLang === 'ar')) {
         state.currentLanguage = savedLang;
+    } else {
+        state.currentLanguage = 'en';
+        localStorage.removeItem('portfolio_language');
     }
     
     // Load theme
@@ -458,6 +574,9 @@ function initializeLanguageSwitcher() {
 }
 
 function switchLanguage(lang) {
+    // Only allow 'en' and 'ar'
+    if (lang !== 'en' && lang !== 'ar') return;
+
     state.currentLanguage = lang;
     savePreferences();
     updatePageLanguage();
@@ -466,15 +585,25 @@ function switchLanguage(lang) {
     if (lang === 'ar') {
         document.documentElement.setAttribute('dir', 'rtl');
         document.documentElement.setAttribute('lang', 'ar');
+        document.body.classList.add('rtl-active');
     } else {
         document.documentElement.setAttribute('dir', 'ltr');
-        document.documentElement.setAttribute('lang', lang);
+        document.documentElement.setAttribute('lang', 'en');
+        document.body.classList.remove('rtl-active');
     }
 
-    // Update active state on ALL lang buttons (navbar + mobile menu)
+    // Update active state on ALL lang buttons
     document.querySelectorAll('.lang-btn').forEach(b => {
         b.classList.toggle('active', b.getAttribute('data-lang') === lang);
     });
+
+    // Re-run typing effect if language changes
+    if (document.querySelector('.hero-title')) {
+        const titleEl = document.querySelector('.hero-title span[data-translate="hero_title"]');
+        if (titleEl) {
+            titleEl.style.direction = lang === 'ar' ? 'rtl' : 'ltr';
+        }
+    }
 }
 
 function updatePageLanguage() {
